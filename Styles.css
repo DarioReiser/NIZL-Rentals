@@ -1,0 +1,5784 @@
+*{
+ margin: 0;
+ padding: 0;
+}
+
+
+/***********************
+Scrollbar Editing
+************************/
+
+::-webkit-scrollbar {
+   width: 6px;
+ }
+ 
+ /* Track */
+ ::-webkit-scrollbar-track {
+   border-radius: 10px;
+ }
+  
+ /* Handle */
+ ::-webkit-scrollbar-thumb {
+   background: rgb(16, 188, 16, 0.85); 
+   border-radius: 10px;
+ }
+
+/***********************
+Scrollbar Editing ends
+************************/
+
+
+html{
+ scroll-behavior: smooth;
+}
+
+body{
+ font-family: sans-serif;
+}
+
+main{
+ background-color: rgba(245, 245, 245, 0.422);
+}
+
+#navbar {
+ overflow: hidden;
+ background-color: #ffffff;
+ width: 100%;
+ position: fixed;
+ padding-top: 3px;
+ top: 0;
+ z-index: 999;
+}
+
+.Logo-Img Img{
+ width: 30%;
+ cursor: pointer;
+}
+
+.Menu-Nav{
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+}
+
+.Main-Menu{
+ display: flex;
+ align-items: center;
+ gap: 55px;
+}
+
+.Menu-Nav ul li, ul li a{
+ text-decoration: none;
+ color: black;
+ list-style-type: none;
+ font-size: 23px;
+ font-family: sans-serif;
+ transition: 0.3s;
+ transform: scale(1);
+}
+
+.Menu-Nav ul li, ul li a:hover{
+ color: rgb(16, 188, 16, 0.85);
+}
+
+.Menu-Nav ul li:hover{
+ transform: scale(1.1);
+}
+
+.nav-btn{
+ border: none;
+ background-color: rgb(16, 188, 16, 0.85);
+ font-size: 20px;
+ border-radius: 5px;
+ padding: 10px 10px;
+ cursor: pointer;
+ color: white;
+ transition: 0.3s;
+ text-decoration: none;
+}
+
+.nav-btn:hover{
+ background-color: yellow;
+ transform: scale(1.1);
+ color: black;
+ box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.section-2{
+ width: 85%;
+ margin: auto;
+}
+
+.Front-Page{
+ display: flex;
+ flex-flow: row;
+ justify-content: center;
+ margin-top: 192px;
+ gap: 190px;
+}
+
+.Front-IMG{
+ display: flex;
+ justify-content: flex-start;
+}
+
+.Front-Text{
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ flex-basis: 45%;
+}
+
+.Front-Text h2{
+ font-size: 60px;
+ margin-bottom: 35px;
+ line-height: 0.9;
+ letter-spacing: 0px;
+ font-family: sans-serif;
+ color: #333;
+}
+
+.Front-Text .Excl-1{
+ color: rgb(16, 188, 16, 0.85);
+}
+
+.Front-Text p{
+ font-size: 22px;
+ font-family: sans-serif;
+ color: #24282b;
+}
+
+.Front-BTN{
+ margin-top: 60px;
+}
+
+.Front-BTN-1{
+ margin-right: 60px;
+ border: none;
+ background-color: rgb(16, 188, 16, 0.85);
+ font-size: 20px;
+ border-radius: 5px;
+ padding: 10px 10px;
+ cursor: pointer;
+ color: black;
+ font-weight: 600;
+ transition: 0.3s;
+}
+
+.Front-BTN-1:hover{
+ color: black;
+ background-color: yellow;
+ transform: scale(1.1);
+ box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.Front-BTN-2{
+ font-size: 20px;
+ border: none;
+ background-color: transparent;
+ color: rgb(16, 188, 16, 0.85);
+ cursor: pointer;
+ transition: 0.3s;
+ font-weight: 600;
+}
+
+.fa-arrow-right{
+ color: black;
+}
+
+.Front-BTN-2:hover{
+ color: black;
+ transform: scale(1.1);
+}
+
+.Front-BTN-2:hover .fa-arrow-right{
+ margin-left: 5px;
+ color: rgb(16, 188, 16, 0.85);
+}
+
+.Front-BTN-1:hover .Excl,
+.nav-btn:hover .Excl-1{
+ color: rgb(16, 188, 16,0.85);
+}
+
+.HR-Gap{
+ display: flex;
+ justify-content: center;
+}
+
+.HR-Gap hr{
+ background-color: rgb(0, 194, 0, 0.85);
+ height: 3px;
+ margin-top: 90px;
+ width: 500px;
+ border-radius: 100px;
+}
+
+.section-3{
+ width: 85%;
+ margin: auto;
+}
+
+.section-3 h2, 
+.section-4 h2, 
+.section-5 h2, 
+.section-6 h2,
+.section-11 h2{
+ text-align: center;
+ color: #333;
+ font-family: sans-serif;
+ font-size: 37px;
+ margin-top: 30px;
+}
+
+.Header-subtitle{
+ margin-top: 12px;
+ margin-bottom: 80px;
+ color: #24282b;
+ text-align: center;
+ font-size: 25px;
+}
+
+.car-image img{
+ width: 95%;
+}
+
+.car-advert-section{
+ display: flex;
+ gap: 100px;
+}
+
+.car-image{
+ display: flex;
+ justify-content: flex-end;
+ order: 2;
+}
+
+.car-advert-text{
+ background-color: rgba(28, 255, 28, 0.164);
+ border-radius: 50px;
+ display: flex;
+ flex-flow: column;
+ justify-content: center;
+ flex-basis: 900px;
+ padding: 0px 20px;
+ color: rgb;
+ box-shadow: -15px 15px 3px rgb(16, 188, 16, 0.85);
+}
+
+.car-advert-text h3,
+.Icon-1 h3, 
+.Icon-2 h3,
+.Icon-3 h3{
+ font-family: sans-serif;
+ color: rgb(16, 188, 16, 0.85);
+ font-size: 29px;
+ margin-bottom: 20px;
+}
+
+.car-advert-text p,
+.Icon-1 p, 
+.Icon-2 p,
+.Icon-3 p{
+ color: #2b2d35;
+ font-size: 20px;
+}
+
+.section-4{
+ margin-top: 80px;
+}
+
+.Icon-Section{
+ width: 85%;
+ margin: auto;
+ display: flex;
+ justify-content: center;
+}
+
+.Icon-Box{
+ display: flex;
+ flex-flow: row;
+ justify-content: center;
+ gap: 100px;
+}
+
+.Icon-1{
+ text-align: center;
+}
+
+.Icon-2{
+ text-align: center;
+}
+
+.Icon-3{
+ text-align: center;
+}
+
+.bi-shield-fill{
+ fill: blue;
+ width: 42px;
+ margin-bottom: 20px;
+ background-color: rgb(16, 188, 16, 0.83);
+ padding: 15px;
+ border-radius: 1000px;
+}
+
+.bi-hand-thumbs-up-fill{
+ fill: peru;
+ width: 42px;
+ margin-bottom: 20px;
+ background-color: rgb(16, 188, 16, 0.83);
+ padding: 15px;
+ border-radius: 1000px;
+}
+
+.bi-lock-fill{
+ fill: grey;
+ width: 42px;
+ margin-bottom: 20px;
+ background-color: rgb(16, 188, 16, 0.83);
+ padding: 15px;
+ border-radius: 1000px;
+}
+
+.CEO-Qoute{
+ width: 85%;
+ margin: auto;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 30px;
+ background-color: rgba(16, 188, 16, 0.83);
+ border-radius: 25px;
+ padding: 14px 5px;
+ margin-top: 80px;
+}
+
+.CEO-Text{
+ width: 80%;
+ font-size: 20px;
+ color: white;
+ font-weight: 100;
+ font-family: sans-serif;
+}
+
+.CEO-IMG img{
+ width: 185px;
+ border-radius: 50%;
+}
+
+.CEO-Text h5{
+ margin-top: 17px;
+ font-family: sans-serif;
+ margin-bottom: 5px;
+}
+
+.CEO-Text h6{
+ font-family: sans-serif;
+}
+
+
+/* CAR OPTIONS SECTION */
+
+.section-5{
+ width: 85%;
+ margin: auto;
+ margin-top: 80px;
+}
+
+.car-rental-options img{
+ width: 100%;
+ border-radius: 20px 20px 0px 0px;
+ object-fit: cover;
+}
+
+.car-rental-options{
+ display: flex;
+ gap: 50px;
+ color: white;
+}
+
+.Note{
+   color: rgb(0, 192, 0);
+   font-size: 12px;
+   text-align: center;
+   margin-bottom: 40px;
+}
+
+.Car-Option-1,
+.Car-Option-2,
+.Car-Option-3,
+.Car-Option-4,
+.Car-Option-5,
+.Car-Option-6,
+.Car-Option-7,
+.Car-Option-8{
+ background-color: rgb(16, 188, 16, 0.83);
+ border-radius: 25px;
+ transition: 0.4s;
+ width: 350px;
+}
+
+.Car-Option-1:hover,
+.Car-Option-2:hover,
+.Car-Option-3:hover,
+.Car-Option-4:hover,
+.Car-Option-5:hover,
+.Car-Option-6:hover,
+.Car-Option-7:hover,
+.Car-Option-8:hover{
+ transform: translateY(-4%);
+}
+
+.Car-Image-1,
+.Car-Image-2,
+.Car-Image-3,
+.Car-Image-4,
+.Car-Image-5,
+.Car-Image-6,
+.Car-Image-7,
+.Car-Image-8{
+ display: flex;
+ justify-content: center;
+}
+
+.car-rental-options h3{
+ font-family: sans-serif;
+ font-size: 19px;
+ padding: 10px;
+}
+
+.car-rental-options h4{
+ font-family: sans-serif;
+ margin-bottom: 5px;
+ padding: 5px 10px;
+}
+
+.car-rental-options p{
+ font-family: sans-serif;
+ padding: 5px 10px;
+}
+
+.car-rental-options ul{
+ font-family: sans-serif;
+ margin-left: 30px;
+ margin-bottom: 20px;
+}
+
+/* CAR OPTION SECTION ENDS HERE */
+
+
+
+
+
+
+
+
+/* CAR SELECTION SECTION */
+
+.Car-Selection-1, 
+.Car-Selection-2,
+.Car-Selection-3,
+.Car-Selection-4,
+.Car-Selection-5{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-top: 80px;
+ gap: 80px;
+}
+
+.Car-Selection-1{
+ margin-bottom: 70px;
+}
+
+.Car-Selection-2,
+.Car-Selection-3,
+.Car-Selection-4,
+.Car-Selection-5{
+ margin-top: -0px;
+}
+
+.Car-Selection-IMG img{
+ width: 100%;
+}
+
+.Car-Selection-3 .Car-Selection-IMG{
+ width: 165%;
+}
+
+.Car-Selection-4 .Car-Selection-IMG,
+.Car-Selection-5 .Car-Selection-IMG{
+ width: 145%;
+}
+
+.Car-Selection-1-Text,
+.Car-Selection-2-Text,
+.Car-Selection-3-Text,
+.Car-Selection-4-Text,
+.Car-Selection-5-Text{
+ width: 100%;
+}
+
+.Car-Selection-1-Text h5,
+.Car-Selection-2-Text h5,
+.Car-Selection-3-Text h5,
+.Car-Selection-4-Text h5,
+.Car-Selection-5-Text h5{
+ margin-bottom: 10px;
+ font-family: sans-serif;
+ font-style: italic;
+ color: red;
+}
+
+.Car-Selection-1-Text h3,
+.Car-Selection-2-Text h3,
+.Car-Selection-3-Text h3,
+.Car-Selection-4-Text h3,
+.Car-Selection-5-Text h3{
+ font-size: 43px;
+ font-family: sans-serif;
+ margin-bottom: 20px;
+ color: rgb(16, 188, 16, 0.85);
+}
+
+.Car-Selection-1-Text p,
+.Car-Selection-2-Text p,
+.Car-Selection-3-Text p,
+.Car-Selection-4-Text p,
+.Car-Selection-5-Text p{
+ font-family: sans-serif;
+ margin-bottom: 15px;
+ line-height: 1.3;
+ font-size: 19px;
+}
+
+.Car-Selection-1-Text h4,
+.Car-Selection-2-Text h4,
+.Car-Selection-3-Text h4,
+.Car-Selection-4-Text h4,
+.Car-Selection-5-Text h4{
+ font-family: sans-serif;
+ margin-bottom: 15px;
+ font-size: 20px;
+}
+
+.Car-Selection-1-Text span,
+.Car-Selection-2-Text span,
+.Car-Selection-3-Text span,
+.Car-Selection-4-Text span,
+.Car-Selection-5-Text span{
+ font-weight: 100;
+}
+
+.Car-Selection-1-Text h6,
+.Car-Selection-2-Text h6,
+.Car-Selection-3-Text h6,
+.Car-Selection-4-Text h6,
+.Car-Selection-5-Text h6{
+ font-family: sans-serif;
+ font-size: 20px;
+}
+
+.Car-Selection-2 .Car-Selection-IMG,
+.Car-Selection-4 .Car-Selection-IMG{
+ order: 1;
+}
+
+.Car-Selection-1 .Car-Selection-IMG,
+.Car-Selection-2 .Car-Selection-IMG,
+.Car-Selection-3 .Car-Selection-IMG,
+.Car-Selection-4 .Car-Selection-IMG,
+.Car-Selection-5 .Car-Selection-IMG{
+ border-radius: 50%;
+}
+
+.Car-Selection-1 .Car-Selection-IMG{
+ background-color: red;
+}
+
+.Car-Selection-2 .Car-Selection-IMG{
+ background-color: black;
+}
+
+.Car-Selection-3 .Car-Selection-IMG{
+ background-color: burlywood;
+}
+
+.Car-Selection-4 .Car-Selection-IMG{
+ background-color: grey;
+}
+
+.Car-Selection-5 .Car-Selection-IMG{
+ background-color: cadetblue;
+}
+
+.Car-Selection-1 .Car-Selection-IMG img,
+.Car-Selection-2 .Car-Selection-IMG img,
+.Car-Selection-3 .Car-Selection-IMG img,
+.Car-Selection-4 .Car-Selection-IMG img,
+.Car-Selection-5 .Car-Selection-IMG img{
+ transition: 0.5s;
+}
+
+
+.Car-Selection-1 .Car-Selection-IMG:hover img,
+.Car-Selection-2 .Car-Selection-IMG:hover img,
+.Car-Selection-3 .Car-Selection-IMG:hover img,
+.Car-Selection-4 .Car-Selection-IMG:hover img,
+.Car-Selection-5 .Car-Selection-IMG:hover img{
+ transform: scale(1.05);
+}
+
+.HR-Gap-2 hr{
+ background-color: rgb(0, 194, 0);
+ height: 3px;
+ width: 100%;
+ border-radius: 100px;
+ margin-top: 50px;
+ margin-bottom: 50px;
+}
+
+/* CAR SELECTION SECTION ENDS HERE */
+
+
+
+
+
+/* Review Section Starts Here */
+
+
+.section-10{
+ background-color: rgba(28, 255, 28, 0.164);
+ width: 85%;
+ margin: auto;
+ border-radius: 50px;
+ box-shadow: rgb(16 188 16) -15px 15px 3px;
+}
+
+.Review-Section,
+.Review-Testimonials{
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ align-items: center;
+}
+
+.Review-Section{
+ padding: 20px 0;
+}
+
+.Review-Section p{
+ font-style: italic;
+ font-size: 17px;
+}
+
+.Review-Section h4{
+ font-size: 20px;
+ margin-bottom: 2px;
+}
+
+.Review-Section h5{
+ font-style: italic;
+ color: rgb(0, 190, 0);
+}
+
+.Review-Testimonials{
+ gap: 50px;
+ padding: 10px 50px;
+}
+
+.Review-Testimonials .Merge{
+ grid-column: 1 / 3;
+}
+
+.Review-Testimonials h2{
+ text-align: center;
+ color: #333;
+ font-family: sans-serif;
+ font-size: 37px;
+}
+
+.Review-Testimonials .Header-subtitle-merge{
+ margin-top: 12px;
+ color: #24282b;
+ text-align: center;
+ font-size: 25px;
+ margin-bottom: 10px;
+}
+
+.Testimonial-Head{
+ display: flex;
+ align-items: center;
+ margin-bottom: 10px;
+}
+
+.Testimonial-Details{
+ margin-left: 10px;
+}
+
+.gallery{
+ display: grid;
+ grid-template-columns: 180px 180px 180px;
+ row-gap: 15px;
+ column-gap: 15px;
+ justify-content: center;
+}
+
+.gallery-picture{
+ display: flex;
+ justify-content: center;
+ overflow: hidden;
+}
+
+.gallery img{
+ width: 100%;
+ transition: 0.5s;
+}
+
+.gallery img:hover{
+ transform: scale(1.2);
+}
+
+.Review-1 img,
+.Review-2 img,
+.Review-3 img,
+.Review-4 img{
+ width: 20%;
+ border-radius: 50%;
+}
+
+.Review-Section svg{
+ width: 25px;
+ stroke: gold;
+ fill: gold;
+ margin-top: 5px;
+}
+
+.special{
+ margin-bottom: 80px;
+}
+
+/* Review Section End here */
+
+
+
+
+
+
+/* MULTIPLE CAR SECTION */
+.section-6{
+ width: 85%;
+ margin: auto;
+ margin-top: 45px;
+}
+
+.Multiple-Car-Section{
+ display: flex;
+ flex-flow: column;
+ align-items: center;
+}
+
+.Multiple-Car-IMG img{
+ width:100%;
+}
+
+.Multiple-Car-IMG{
+ display: flex;
+ flex-flow: column;
+ align-items: center;
+ order: 1;
+}
+
+.Multiple-Car-Logos{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-top: -35px;
+ margin-bottom: 50px;
+ gap: 10px;
+}
+
+.Multiple-Car-Logos img{
+ width: 14%;
+}
+
+/* MULTIPLE CAR SECTION ENDS HERE*/
+
+
+
+
+
+
+
+/* CONTACT SECTION STARTS HERE */
+
+.section-11{
+ width: 85%;
+ margin: auto;
+ margin-top: 80px;
+}
+
+.contact-section{
+ display: grid;
+ grid-template-columns: 1fr 560px;
+ margin-top: -15px;
+}
+
+.contact-form input{
+ border: none;
+ border-bottom: 2px solid rgb(16, 188, 16, 0.85);
+ font-size: 20px;
+ padding: 5px;
+ background-color: transparent;
+ width: 95%;
+}
+
+.form-grid h4{
+ margin-bottom: 10px;
+ font-size: 20px;
+ letter-spacing: 0.5px;
+ color: rgb(16, 188, 16, 0.85);
+}
+
+.contact-form{
+ padding: 35px 40px;
+ border: 3px solid rgb(16, 188, 16, 0.85);
+ background-color: rgba(230, 255, 230, 0.1);
+ border-radius: 50px 0 0 50px;
+}
+
+.contact-form-header h3,
+.contact-header h3{
+ margin-bottom: 40px;
+ font-size: 25px;
+}
+
+.contact-form-header h3{
+ color: rgb(16, 188, 16, 0.85);
+}
+
+.contact-header h3{
+ color: white;
+}
+
+.contact-form .form-grid{
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ column-gap: 20px;
+}
+
+.form-grid-4{
+ grid-column: 1 / 3;
+}
+
+.form-grid-4 textarea{
+ width: 97%;
+ font-family: sans-serif;
+ padding: 5px;
+ background-color: transparent;
+ border: 1.8px solid rgb(16, 188, 16, 0.85);
+ font-size: 20px;
+}
+
+.contact-text{
+ background-color: rgb(16, 188, 16, 0.85);
+ border-radius: 0 50px 50px 0;
+ padding: 35px 40px;
+}
+
+.contact-text-1,
+.contact-text-2,
+.contact-text-3,
+.contact-text-4{
+ display: flex;
+ align-items: center;
+ margin-bottom: 30px;
+}
+
+.form-grid-1,
+.form-grid-2,
+.form-grid-3,
+.form-grid-4{
+ margin-bottom: 30px;
+}
+
+.contact-text svg{
+ width: 70px;
+ margin-right: 10px;
+}
+
+form button{
+ font-size: 20px;
+ padding: 5px 20px;
+ border-radius: 25px;
+ background-color: rgb(16, 188, 16, 0.85);
+ color: white;
+ cursor: pointer;
+ transition: 0.3s;
+ border: 4px solid black;
+}
+
+
+form button:hover{
+ transform: scale(1.05);
+ background-color: yellow;
+ color: black;
+}
+
+.contact-text-grid{
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ column-gap: 22px;
+ color: white;
+}
+
+.contact-text-grid p{
+ font-size: 16px;
+}
+
+select{
+   border: none;
+   color: #000000;
+   border-bottom: 2px solid rgb(0, 190, 0);
+   font-size: 20px;
+   padding: 4.5px;
+   width: 98%;
+   background-color: rgba(230, 255, 230, 0.1);
+   margin-bottom: 40px;
+}
+
+/* CONTACT SECTION ENDS HERE */
+
+
+
+
+
+
+
+/* CAR FAMILY SECTION STARTS HERE */
+
+.section-7{
+ width: 85%;
+ margin: auto;
+ margin-top: 90px;
+}
+
+.Car-Family-Section{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: rgba(28, 255, 28, 0.164);
+ box-shadow: -15px 15px 3px rgb(16, 188, 16, 0.85);
+ border-radius: 50px;
+ gap: 0px;
+ transition: 0.5s;
+}
+
+.Car-Family-IMG img{
+ width: 80%;
+}
+
+.Car-Family-IMG{
+ display: flex;
+ justify-content: center;
+ width: 70%;
+}
+
+.Car-Family-Text{
+ width: 100%;
+ margin-right: 50px;
+}
+
+.Car-Family-Text h3{
+ font-family: sans-serif;
+ font-size: 30px;
+ margin-bottom: 20px;
+}
+
+.Car-Family-Text p{
+ font-size: 21px;
+}
+
+/* CAR FAMILY SECTION STARTS HERE ENDS*/
+
+
+
+
+/* EMAIL SECTION STARTS HERE */
+
+.section-8{
+ margin-top: 100px;
+}
+
+.Email-Section{
+ display: flex;
+}
+
+.Email-Signup-Text{
+ background-color: rgb(16, 188, 16, 0.85);
+ width: 35%;
+}
+
+.Email-Signup-Text h3{
+ color: white;
+ padding: 40px 40px;
+ font-size: 45px;
+ font-family: sans-serif;
+}
+
+.Email-Input{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: rgba(28, 255, 28, 0.164);
+ flex-grow: 1;
+}
+
+.Make-Column{
+ width: 800px;
+ display: flex;
+ flex-flow: column;
+}
+
+.Part-1{
+ margin-left: 21px;
+}
+
+.Part-2{
+ display: flex;
+ justify-content: center;
+}
+
+.Email-Input h4{
+ font-size: 35px;
+ text-transform: uppercase;
+ margin-bottom: 10px;
+ font-family: sans-serif;
+}
+
+.Email{
+ width: 80%;
+ font-size: 25px;
+ padding: 5px 0px;
+ border: 2px solid black;
+}
+
+.Submit{
+ font-size: 25px;
+ padding: 5px 15px;
+ border: 2px solid black;
+ background-color: rgb(16, 188, 16, 0.85);
+ color: white;
+ cursor: pointer;
+ transition: 0.3s;
+}
+
+.Submit:hover{
+ background-color: yellow;
+ color: black;
+}
+
+/* EMAIL SECTION ENDS HERE */
+
+
+/* FOOTER SECTION STARTS HERE */
+
+.section-9{
+ background-color: #000000;
+}
+
+.Footer-Section{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 95%;
+ height: 350px;
+ margin: auto;
+ gap: 20px;
+}
+
+.Footer-Section-2,
+.Footer-Section-3,
+.Footer-Section-4{
+ width: 20%;
+}
+
+.Footer-Section-2 li,
+.Footer-Section-3 li,
+.Footer-Section-4 li{
+ list-style: none;
+ color: rgb(228, 228, 228);
+}
+
+.Footer-Section-2 h2,
+.Footer-Section-3 h2,
+.Footer-Section-4 h2{
+ color: white;
+ margin-bottom: 15px;
+ font-family: sans-serif;
+}
+
+.Footer-Section ul a{
+ color: rgb(200, 200, 200);
+ font-size: 17px;
+}
+
+.Footer-Section-1 img{
+ width: 90%;
+ margin-bottom: 10px;
+}
+
+.Footer-Section-1{
+ display: flex;
+ flex-flow: column;
+ width: 40%;
+}
+
+.Footer-Section-2 h2,
+.Footer-Section-3 h2,
+.Footer-Section-4 h2{
+ font-size: 23px;
+ padding: 5px 0px;
+ color: rgb(0, 190, 0);
+}
+
+.Footer-Section-2 li,
+.Footer-Section-3 li,
+.Footer-Section-4 li{
+ font-size: 17px;
+ padding: 5px 0px;
+}
+
+.back-to-top{
+   display: none;
+}
+
+/* FOOTER SECTION ENDS HERE */
+
+
+/* COPYRIGHT SECTION STARTS HERE */
+
+.copyright{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 18px;
+ background-color: #000000;
+ color: rgb(200, 200, 200);
+ text-align: center;
+ height: 50px;
+ border-top: 3px solid white;
+ font-family: sans-serif;
+}
+
+/* COPYRIGHT SECTION ENDS HERE */
+
+
+
+
+
+/******************************************
+*******************************************
+*******************************************
+MEDIA QUERIES CSS START HERE
+*******************************************
+*******************************************
+******************************************/
+
+
+/******************************************
+Media Queries at 1400px (Small PCs)
+******************************************/
+
+@media (max-width: 1400px) {
+
+
+/***********************************
+GENERAL STYLES 
+************************************/
+
+.section-3 h2,
+.section-4 h2,
+.section-5 h2,
+.section-6 h2,
+.section-11 h2{
+   font-size: 35px;
+}
+
+.Header-subtitle{
+   font-size: 23px;
+}
+
+.car-advert-text h3,
+.Icon-1 h3,
+.Icon-2 h3,
+.Icon-3 h3{
+   font-size: 25px;
+}
+
+.car-advert-text p,
+.Icon-1 p,
+.Icon-2 p,
+.Icon-3 p{
+   font-size: 18px;
+}
+
+/***********************************
+END OF GENERAL GENERAL STYLES 
+************************************/
+
+
+
+
+    
+/*********************************** 
+Section 1: Navigation and Logo 
+************************************/
+
+.narrow-logo{
+   width: 45%;
+}
+
+.Logo-Img Img{
+   width: 30%;
+}
+
+.Main-Menu{
+   gap: 30px;
+}
+
+.Menu-Nav ul li, 
+ul li a{
+   font-size: 20px;
+   font-weight: 500;
+}
+
+.nav-btn{
+    font-size: 20px;
+    padding: 10px 6px;
+}
+
+/*********************************
+ End of Section 1 media queries 
+ ********************************/
+
+
+
+
+
+/*********************************** 
+Section 2: Front Page 
+***********************************/
+
+.Front-Text h2{
+   font-size: 50px;
+}
+
+.Front-Text p{
+   font-size: 20px;
+   margin-right: 10px;
+}
+
+.Front-Page{
+   justify-content: space-between;
+   gap: 0px;
+  }
+
+  .Front-BTN-1 {
+   font-size: 19px;
+}
+
+.Front-BTN-2 {
+   font-size: 19px;
+}
+
+/**********************************
+End of Section 2 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 3: Best Rental Service  
+***********************************/
+
+.car-advert-section{
+   gap: 55px;
+}
+
+.car-advert-text{
+   padding: 21px 21px;
+}
+
+.car-image img{
+   width: 100%;
+}
+
+
+/**********************************
+End of Section 3 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 4: We offer the best cars  
+***********************************/
+
+.CEO-Qoute{
+   gap: 25px;
+}
+
+.CEO-IMG img{
+   width: 180px;
+}
+
+.Icon-Box{
+   gap: 90px;
+}
+
+.CEO-Text{
+   font-size: 18px;
+}
+
+/**********************************
+End of Section 4 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 5: Our Stunning Rental Cars  
+***********************************/
+
+.car-rental-options{
+   gap: 30px;
+}
+
+.car-rental-options h3{
+   font-size: 18px;
+}
+
+/**********************************
+End of Section 5 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 6: Our Top Rental Cars  
+***********************************/
+
+.Car-Selection-1,
+.Car-Selection-2,
+.Car-Selection-3,
+.Car-Selection-4,
+.Car-Selection-5{
+   gap: 70px;
+}
+
+.Car-Selection-1-Text h3,
+.Car-Selection-2-Text h3,
+.Car-Selection-3-Text h3,
+.Car-Selection-4-Text h3,
+.Car-Selection-5-Text h3{
+   font-size: 35px;
+}
+
+.Car-Selection-IMG img{
+   width: 90%;
+}
+
+.Car-Selection-3 .Car-Selection-IMG {
+   width: 210%;
+}
+
+.Car-Selection-4 .Car-Selection-IMG {
+   width: 160%;
+}
+
+.Car-Selection-5 .Car-Selection-IMG {
+   width: 160%;
+}
+
+/**********************************
+End of Section 6 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 10: Review Sections 
+***********************************/
+
+.Review-Section{
+   padding: 15px 10px;
+}
+
+.Review-Testimonials h2{
+   font-size: 34px;
+}
+
+.Review-Testimonials 
+.Header-subtitle-merge{
+   font-size: 20px;
+}
+
+.Review-Testimonials{
+   row-gap: 40px;
+   column-gap: 30px;
+   padding: 15px 10px;
+}
+
+.gallery{
+   row-gap: 13px;
+   column-gap: 13px;
+}
+
+.gallery img{
+   width: 90%;
+}
+
+/**********************************
+End of Section 10 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 7: Family car text  
+***********************************/
+
+.Car-Family-Text h3{
+   font-size: 25px;
+}
+
+.Car-Family-Text p{
+   font-size: 19px;
+}
+
+.Car-Family-Text{
+   margin-right: 50px;
+}
+
+.Car-Family-IMG{
+   width: 75%;
+}
+
+.Car-Family-Section {
+   height: 370px;
+}
+
+/**********************************
+End of Section 7 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 8: Email-Signup  
+***********************************/
+
+.Email-Signup-Text h3{
+   padding: 40px 33px;
+   font-size: 38px;
+}
+
+/**********************************
+End of Section 8 media queries 
+***********************************/
+
+
+
+
+
+/*********************************
+Contact Section 
+**********************************/
+
+.contact-form{
+   padding: 30px 30px;
+}
+
+.contact-form-header h3,
+.contact-header h3{
+   font-size: 25px;
+   margin-bottom: 35px;
+}
+
+.form-grid h4{
+   margin-bottom: 5px;
+}
+
+.contact-form .form-grid{
+   display: flex;
+   flex-direction: column;
+}
+
+.contact-form input{
+   margin-bottom: 40px;
+   width: 98%;
+   font-size: 18px;
+}
+
+.form-grid-1,
+.form-grid-2,
+.form-grid-3,
+.form-grid-4{
+   margin-bottom: 0px;
+}
+
+.form-grid-4 textarea{
+   width: 97.5%;
+   height: 110px;
+   font-size: 18px;
+   margin-bottom: 20px;
+}
+
+form button{
+   padding: 8px 25px;
+}
+
+.contact-text{
+   padding: 35px 30px;
+}
+
+iframe{
+   height: 65%;
+}
+
+select{
+   font-size: 18px;
+   width: 100%;
+}
+
+/*********************************
+End of Contact Section 
+**********************************/
+
+
+
+
+
+/*********************************
+Footer Section
+**********************************/
+
+.back-to-top{
+   display: none;
+}
+
+/*********************************
+End of Footer Section 
+**********************************/
+
+}
+
+/******************************************
+End of Media Queries at 1400px (Small PCs)
+******************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************************
+Media Queries at 1200px (Tablets, Ipads, etc)
+******************************************/
+
+@media (max-width: 1200px) {
+
+
+/***********************************
+GENERAL STYLES 
+************************************/
+
+.section-3 h2,
+.section-4 h2,
+.section-5 h2,
+.section-6 h2,
+.section-11 h2{
+   font-size: 35px;
+}
+
+.Header-subtitle{
+   font-size: 24px;
+}
+
+.car-advert-text h3,
+.Icon-1 h3,
+.Icon-2 h3,
+.Icon-3 h3{
+   font-size: 22px;
+   margin-bottom: 16px;
+}
+
+.car-advert-text p,
+.Icon-1 p,
+.Icon-2 p,
+.Icon-3 p{
+   font-size: 17px;
+}
+
+/***********************************
+END OF GENERAL GENERAL STYLES 
+************************************/
+
+
+
+
+    
+/*********************************** 
+Section 1: Navigation and Logo 
+************************************/
+
+#navbar {
+   padding-top: 5px;
+   padding-bottom: 5px;
+}
+
+.narrow-logo{
+   width: 40%;
+}
+
+.Logo-Img Img {
+   width: 35%;
+}
+
+.Main-Menu{
+   gap: 25px;
+}
+
+.Menu-Nav ul li, 
+ul li a{
+   font-size: 17px;
+   font-weight: 600;
+}
+
+.nav-btn{
+    font-size: 18px;
+    padding: 8px 5px;
+    font-weight: 600;
+}
+
+/*********************************
+ End of Section 1 media queries 
+ ********************************/
+
+
+
+
+
+/*********************************** 
+Section 2: Front Page 
+***********************************/
+
+.section-2{
+   width: 88%;
+}
+
+.Front-Text h2{
+   font-size: 40px;
+}
+
+.Front-Text p{
+   font-size: 20px;
+   margin-right: 10px;
+}
+
+.Front-Page{
+   justify-content: space-between;
+   margin-top: 150px;
+   gap: 0px;
+}
+
+.Front-IMG-Adj{
+   width: 90%;
+}
+
+.Front-BTN{
+   margin-top: 40px;
+}
+
+.Front-BTN-1{
+   font-size: 18px;
+   margin-right: 40px;
+   font-weight: 600;
+}
+
+.Front-BTN-2{
+   font-size: 18px;
+   font-weight: 600;
+}
+
+/**********************************
+End of Section 2 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 3: Best Rental Service  
+***********************************/
+
+.section-3 {
+   width: 88%;
+}
+
+.car-advert-section{
+   gap: 40px;
+}
+
+.car-advert-text{
+   padding: 18px 18px;
+   border-radius: 35px;
+}
+
+.car-image img{
+   width: 100%;
+}
+
+
+/**********************************
+End of Section 3 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 4: We offer the best cars  
+***********************************/
+
+.Icon-Section {
+   width: 88%;
+}
+
+.CEO-Qoute{
+   gap: 20px;
+}
+
+.CEO-IMG img{
+   width: 150px;
+}
+
+.Icon-Box{
+   gap: 70px;
+}
+
+.CEO-Text{
+   font-size: 17px;
+   margin-right: 10px;
+}
+
+.CEO-Qoute {
+   width: 88%;
+}
+
+.bi-shield-fill {
+   width: 35px;
+   margin-bottom: 18px;
+}
+
+.bi-hand-thumbs-up-fill {
+   width: 35px;
+   margin-bottom: 18px;
+}
+
+.bi-lock-fill {
+   width: 35px;
+   margin-bottom: 18px;
+}
+
+/**********************************
+End of Section 4 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 5: Our Stunning Rental Cars  
+***********************************/
+
+.section-5 {
+   width: 88%;
+}
+
+.car-rental-options{
+   gap: 18px;
+}
+
+.car-rental-options h3{
+   font-size: 20px;
+}
+
+.car-rental-options p,
+.car-rental-options ul{
+   font-size: 17px;
+}
+
+.car-rental-options h4 {
+   font-size: 18px;
+}
+
+/**********************************
+End of Section 5 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 6: Our Top Rental Cars  
+***********************************/
+
+.Car-Selection-1,
+.Car-Selection-2,
+.Car-Selection-3,
+.Car-Selection-4,
+.Car-Selection-5{
+   gap: 50px;
+}
+
+.Car-Selection-1-Text h3,
+.Car-Selection-2-Text h3,
+.Car-Selection-3-Text h3,
+.Car-Selection-4-Text h3,
+.Car-Selection-5-Text h3{
+   font-size: 32px;
+}
+
+.Car-Selection-IMG img{
+   width: 100%;
+}
+
+.Car-Selection-1-Text,
+.Car-Selection-2-Text,
+.Car-Selection-3-Text,
+.Car-Selection-4-Text, 
+.Car-Selection-5-Text{
+   width: 170%;
+}
+
+.Car-Selection-1-Text p,
+.Car-Selection-2-Text p,
+.Car-Selection-3-Text p,
+.Car-Selection-4-Text p,
+.Car-Selection-5-Text p{
+   font-size: 17px;
+}
+
+.Car-Selection-1-Text span,
+.Car-Selection-2-Text span,
+.Car-Selection-3-Text span,
+.Car-Selection-4-Text span,
+.Car-Selection-5-Text span{
+   font-size: 17px;
+}
+
+.Car-Selection-1-Text h4, 
+.Car-Selection-2-Text h4, 
+.Car-Selection-3-Text h4, 
+.Car-Selection-4-Text h4, 
+.Car-Selection-5-Text h4 {
+   font-family: sans-serif;
+   margin-bottom: 15px;
+   font-size: 18px;
+}
+
+.Car-Selection-1-Text h6, 
+.Car-Selection-2-Text h6, 
+.Car-Selection-3-Text h6, 
+.Car-Selection-4-Text h6, 
+.Car-Selection-5-Text h6 {
+   font-family: sans-serif;
+   font-size: 18px;
+}
+
+.Car-Selection-3 .Car-Selection-IMG{
+   width: 250%;
+}
+
+.Car-Selection-4 .Car-Selection-IMG{
+   width: 190%;
+}
+
+.Car-Selection-5 .Car-Selection-IMG{
+   width: 190%;
+}
+
+/**********************************
+End of Section 6 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 10: Review Sections 
+***********************************/
+
+.section-10 {
+   width: 92%;
+   border-radius: 30px;
+}
+
+.Review-Section{
+   padding: 10px 5px;
+}
+
+.Review-Testimonials h2{
+   font-size: 32px;
+}
+
+.Review-Section h4 {
+   font-size: 18px;
+   margin-bottom: 2px;
+}
+
+.Review-Testimonials 
+.Header-subtitle-merge{
+   font-size: 20px;
+}
+
+.Review-Testimonials {
+   row-gap: 18px;
+   column-gap: 20px;
+   padding: 10px 8px;
+}
+
+.Review-Section p {
+   font-style: italic;
+   font-size: 17px;
+}
+
+.Review-Section svg{
+   width: 18px;
+}
+
+.Review-1 img, 
+.Review-2 img, 
+.Review-3 img, 
+.Review-4 img {
+   width: 25%;
+   border-radius: 50%;
+}
+
+.Review-Section h5 {
+   font-size: 14px;
+}
+
+.gallery{
+   row-gap: 16px;
+   column-gap: 0px;
+}
+
+.gallery img{
+   width: 88%;
+}
+
+/**********************************
+End of Section 10 media queries 
+***********************************/
+
+
+
+
+
+/**************************
+WIDE VARIETY SECTION
+**************************/
+
+.section-6 {
+   width: 88%;
+}
+
+/**************************
+END OF WIDE VARIETY SECTION
+**************************/
+
+
+
+
+
+/*********************************
+Contact Section 
+**********************************/
+
+.section-11 {
+   width: 88%;
+}
+
+.contact-section {
+   display: grid;
+   grid-template-columns: 1fr 480px;
+   margin-top: -15px;
+}
+
+.contact-form input {
+   margin-bottom: 35px;
+   font-size: 17px;
+   width: 97%;
+}
+
+.contact-text-grid p {
+   font-size: 15px;
+}
+
+.contact-text-grid {
+   column-gap: 15px;
+}
+
+.contact-text-grid {
+   display: grid;
+   grid-template-columns: repeat(2, 207px);
+   column-gap: 10px;
+   color: white;
+}
+
+.form-grid-4 textarea{
+   font-size: 17px;
+   width: 96%;
+}
+
+form button {
+   border: 4px solid black;
+}
+
+select{
+   font-size: 17px;
+   width: 98.5%;
+}
+
+/*********************************
+End of Contact Section 
+**********************************/
+
+
+
+
+
+/*********************************** 
+Section 7: Family car text  
+***********************************/
+
+.section-7 {
+   width: 88%;
+}
+
+.Car-Family-Text h3{
+   font-size: 22px;
+}
+
+.Car-Family-Text p{
+   font-size: 17px;
+}
+
+.Car-Family-Text{
+   margin-right: 50px;
+}
+
+.Car-Family-Section {
+   height: 350px;
+}
+
+.Car-Family-IMG img {
+   width: 78%;
+}
+
+.Car-Family-IMG{
+   width: 75%;
+}
+
+/**********************************
+End of Section 7 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 8: Email-Signup  
+***********************************/
+
+.Email-Input {
+   width: 10%;
+}
+
+.Email-Signup-Text h3{
+   padding: 40px 33px;
+   font-size: 36px;
+}
+
+.Email-Input h4 {
+   font-size: 30px;
+}
+
+.Email {
+   font-size: 20px;
+   width: 100%;
+}
+
+.Part-1 {
+   margin-left: 0px;
+}
+
+.Make-Column {
+   width: 92%;
+}
+
+/**********************************
+End of Section 8 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Footer Section 
+***********************************/
+
+.Footer-Section {
+   width: 100%;
+   gap: 25px;
+}
+
+.Footer-Section-2 h2, .Footer-Section-3 h2, .Footer-Section-4 h2 {
+   font-size: 22px;
+}
+
+.Footer-Section ul a {
+   font-size: 17px;
+}
+
+.Footer-Section-1 img {
+   width: 80%;
+}
+
+.back-to-top{
+   display: none;
+}
+
+/**********************************
+End of Footer Section media queries 
+***********************************/
+
+
+}
+
+/******************************************
+End of Media Queries at 1200px 
+(Tablets, Ipads, etc)
+******************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************************************
+Media Queries at 1000px (Small Tablets and Ipads)
+***********************************************/
+
+@media (max-width: 1000px) {
+
+/***********************************
+GENERAL STYLES 
+************************************/
+
+.section-3 h2,
+.section-4 h2,
+.section-5 h2,
+.section-6 h2,
+.section-11 h2{
+   font-size: 30px;
+}
+
+.Header-subtitle{
+   font-size: 22px;
+   margin-top: 7px;
+}
+
+.car-advert-text h3,
+.Icon-1 h3,
+.Icon-2 h3,
+.Icon-3 h3{
+   font-size: 20px;
+   margin-bottom: 14px;
+}
+
+.car-advert-text p,
+.Icon-1 p,
+.Icon-2 p,
+.Icon-3 p{
+   font-size: 17px;
+}
+
+/***********************************
+END OF GENERAL GENERAL STYLES 
+************************************/
+
+
+
+
+    
+/*********************************** 
+Section 1: Navigation and Logo 
+************************************/
+
+.Logo-Img Img {
+   width: 50%;
+}
+
+.narrow-logo{
+   width: 30%;
+}
+
+.Main-Menu{
+   gap: 23px;
+}
+
+.Menu-Nav ul li, 
+ul li a{
+   font-size: 16px;
+   font-weight: 600;
+}
+
+.nav-btn{
+    font-size: 17px;
+    padding: 8px 5px;
+    font-weight: 600;
+}
+
+/*********************************
+ End of Section 1 media queries 
+ ********************************/
+
+
+
+
+
+/*********************************** 
+Section 2: Front Page 
+***********************************/
+
+#navbar {
+   padding-top: 5px;
+   padding-bottom: 5px;
+}
+
+.section-2 {
+   width: 90%;
+}
+
+.Front-IMG-Adj {
+   width: 82%;
+}
+
+.Front-Text h2{
+   font-size: 34px;
+}
+
+.Front-Text p{
+   font-size: 18px;
+   margin-right: 10px;
+}
+
+.Front-BTN-1 {
+   font-size: 16px;
+   margin-right: 20px;
+   padding: 8px 8px;
+   font-weight: 600;
+}
+
+.Front-BTN-2 {
+   font-size: 16px;
+   font-weight: 600;
+}
+
+.Front-Page{
+   justify-content: space-between;
+   gap: 0px;
+  }
+
+/**********************************
+End of Section 2 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 3: Best Rental Service  
+***********************************/
+
+.section-3 {
+   width: 90%;
+}
+
+.car-advert-section{
+   display: block;
+}
+
+.car-advert-text {
+   padding: 15px 14px;
+   border-radius: 30px;
+}
+
+.car-image img{
+   width: 100%;
+}
+
+/**********************************
+End of Section 3 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 4: We offer the best cars  
+***********************************/
+
+.Icon-Section {
+   width: 90%;
+}
+
+.CEO-Qoute{
+   gap: 20px;
+   width: 90%;
+}
+
+.CEO-IMG img{
+   width: 145px;
+}
+
+.Icon-Box{
+   gap: 50px;
+}
+
+.CEO-Text{
+   font-size: 17px;
+   margin-right: 10px;
+}
+
+.bi-shield-fill {
+   width: 30px;
+   margin-bottom: 18px;
+}
+
+.bi-hand-thumbs-up-fill {
+   width: 30px;
+   margin-bottom: 18px;
+}
+
+.bi-lock-fill {
+   width: 30px;
+   margin-bottom: 18px;
+}
+
+/**********************************
+End of Section 4 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 5: Our Stunning Rental Cars  
+***********************************/
+
+.section-5 {
+   width: 90%;
+}
+
+.car-rental-options{
+   gap: 13px;
+}
+
+.car-rental-options h3{
+   font-size: 18px;
+}
+
+.car-rental-options p,
+.car-rental-options ul{
+   font-size: 17px;
+}
+
+.Car-Option-1:hover,
+.Car-Option-2:hover,
+.Car-Option-3:hover,
+.Car-Option-4:hover,
+.Car-Option-5:hover,
+.Car-Option-6:hover,
+.Car-Option-7:hover,
+.Car-Option-8:hover{
+ transform: none;
+}
+
+
+/**********************************
+End of Section 5 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 6: Our Top Rental Cars  
+***********************************/
+
+.Car-Selection-1,
+.Car-Selection-2,
+.Car-Selection-3,
+.Car-Selection-4,
+.Car-Selection-5{
+   gap: 45px;
+}
+
+.Car-Selection-1-Text h5,
+.Car-Selection-2-Text h5,
+.Car-Selection-3-Text h5,
+.Car-Selection-4-Text h5,
+.Car-Selection-5-Text h5 {
+   font-size: 11px;
+}
+
+.Car-Selection-1-Text h3,
+.Car-Selection-2-Text h3,
+.Car-Selection-3-Text h3,
+.Car-Selection-4-Text h3,
+.Car-Selection-5-Text h3{
+   font-size: 28px;
+}
+
+.Car-Selection-IMG img{
+   width: 100%;
+}
+
+.Car-Selection-1-Text,
+.Car-Selection-2-Text,
+.Car-Selection-3-Text,
+.Car-Selection-4-Text, 
+.Car-Selection-5-Text{
+   width: 170%;
+}
+
+.Car-Selection-1-Text p,
+.Car-Selection-2-Text p,
+.Car-Selection-3-Text p,
+.Car-Selection-4-Text p,
+.Car-Selection-5-Text p{
+   font-size: 17px;
+}
+
+.Car-Selection-1-Text h4,
+.Car-Selection-2-Text h4,
+.Car-Selection-3-Text h4,
+.Car-Selection-4-Text h4,
+.Car-Selection-5-Text h4 {
+   font-size: 18px;
+}
+
+.Car-Selection-1-Text span,
+.Car-Selection-2-Text span,
+.Car-Selection-3-Text span,
+.Car-Selection-4-Text span,
+.Car-Selection-5-Text span{
+   font-size: 17px;
+}
+
+.Car-Selection-1-Text h6,
+.Car-Selection-2-Text h6,
+.Car-Selection-3-Text h6,
+.Car-Selection-4-Text h6,
+.Car-Selection-5-Text h6 {
+   font-size: 18px;
+}
+
+.Car-Selection-3 .Car-Selection-IMG{
+   width: 270%;
+}
+
+.Car-Selection-4 .Car-Selection-IMG{
+   width: 210%;
+}
+
+.Car-Selection-5 .Car-Selection-IMG{
+   width: 210%;
+}
+
+.Car-Selection-1 .Car-Selection-IMG:hover img,
+.Car-Selection-2 .Car-Selection-IMG:hover img,
+.Car-Selection-3 .Car-Selection-IMG:hover img,
+.Car-Selection-4 .Car-Selection-IMG:hover img,
+.Car-Selection-5 .Car-Selection-IMG:hover img{
+ transform: none;
+}
+
+/**********************************
+End of Section 6 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 10: Review Sections 
+***********************************/
+
+.section-10 {
+   width: 90%;
+}
+
+.gallery {
+   row-gap: 16px;
+   column-gap: 0px;
+   display: grid;
+   grid-template-columns: 150px 150px;
+}
+
+.gallery img {
+   width: 75%;
+}
+
+.Review-Section{
+   padding: 10px 5px;
+}
+
+.Review-Section p {
+   font-size: 17px;
+}
+
+.Review-Section h4 {
+   font-size: 17px;
+}
+
+.Review-1 img, 
+.Review-2 img, 
+.Review-3 img, 
+.Review-4 img {
+   width: 24%;
+   border-radius: 50%;
+}
+
+.Review-Section h5 {
+   font-style: italic;
+   color: rgb(0, 190, 0);
+   font-size: 14px;
+}
+
+.Review-Testimonials h2{
+   font-size: 30px;
+}
+
+.Review-Testimonials 
+.Header-subtitle-merge{
+   font-size: 19px;
+}
+
+.Review-Testimonials{
+   row-gap: 30px;
+   column-gap: 20px;
+   padding: 15px 10px;
+}
+
+.mobile-gone{
+   display: none;
+}
+
+.Review-Section svg {
+   width: 15px;
+}
+
+/**********************************
+End of Section 10 media queries 
+***********************************/
+
+
+
+
+
+/*********************************
+Contact Section 
+**********************************/
+
+.section-11 {
+   width: 90%;
+}
+
+.contact-section {
+   display: grid;
+   grid-template-columns: 1fr 370px;
+   margin-top: -15px;
+}
+
+.contact-form input {
+   margin-bottom: 35px;
+   font-size: 17px;
+   width: 97%;
+}
+
+.contact-text-grid p {
+   font-size: 17px;
+}
+
+.form-grid h4 {
+   font-size: 19px;
+}
+
+form button {
+   border: 3px solid black;
+}
+
+.contact-text-grid {
+   column-gap: 15px;
+}
+
+.contact-text-grid {
+   display: grid;
+   grid-template-columns: 312px;
+   grid-template-rows: repeat(4, 58px);
+   column-gap: 10px;
+   color: white;
+}
+
+.form-grid-4 textarea{
+   font-size: 17px;
+   width: 96%;
+}
+
+.contact-text svg {
+   width: 30px;
+   margin-right: 10px;
+}
+
+form button {
+   padding: 5px 20px;
+}
+
+iframe {
+   height: 55%;
+}
+
+select{
+   font-size: 17px;
+   width: 99%;
+}
+
+/*********************************
+End of Contact Section 
+**********************************/
+
+
+
+
+
+/*********************************** 
+Section 7: Family car text  
+***********************************/
+
+.Car-Family-Section {
+   height: 410px;
+}
+
+.Car-Family-Text h3{
+   font-size: 21px;
+   margin-bottom: 12px;
+}
+
+.Car-Family-Text p{
+   font-size: 17px;
+}
+
+.Car-Family-Text{
+   margin-right: 20px;
+}
+
+.Car-Family-IMG{
+   width: 75%;
+}
+
+.Car-Family-IMG img {
+   width: 100%;
+}
+
+.section-7 {
+   width: 90%;
+}
+
+/**********************************
+End of Section 7 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 8: Email-Signup  
+***********************************/
+
+.Email-Signup-Text h3{
+   padding: 28px 28px;
+   font-size: 29px;
+}
+
+.Email-Input h4 {
+   font-size: 25px;
+}
+
+.Email {
+   font-size: 18px;
+   width: 100%;
+}
+
+.Make-Column {
+   width: 92%;
+}
+
+.Submit {
+   font-size: 18px;
+}
+
+/**********************************
+End of Section 8 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Footer Section 
+***********************************/
+
+.Footer-Section-1 {
+   width: 25%;
+}
+
+.Footer-Section {
+   width: 100%;
+   gap: 30px;
+}
+
+.Footer-Section-2 h2, .Footer-Section-3 h2, .Footer-Section-4 h2 {
+   font-size: 19px;
+}
+
+.Footer-Section ul a {
+   font-size: 15px;
+}
+
+.Footer-Section-1 img {
+   width: 85%;
+}
+
+.copyright {
+   font-size: 15px;
+   height: 40px;
+}
+
+.back-to-top{
+   display: none;
+}
+
+/**********************************
+End of Footer Section media queries 
+***********************************/
+
+}
+
+/***********************************************
+End of Media Queries at 1000px (SmallTablets and Ipads)
+***********************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************************************
+Media Queries at 800px (Phablets and Mini Tablets)
+***********************************************/
+
+@media (max-width: 800px) {
+
+/***********************************
+GENERAL STYLES 
+************************************/
+
+.section-3 h2,
+.section-4 h2,
+.section-5 h2,
+.section-6 h2,
+.section-11 h2{
+   font-size: 27px;
+}
+
+.Header-subtitle{
+   font-size: 20px;
+   margin-top: 7px;
+}
+
+.car-advert-text h3,
+.Icon-1 h3,
+.Icon-2 h3,
+.Icon-3 h3{
+   font-size: 18px;
+   margin-bottom: 10px;
+}
+
+.car-advert-text p,
+.Icon-1 p,
+.Icon-2 p,
+.Icon-3 p{
+   font-size: 14px;
+}
+
+/***********************************
+END OF GENERAL GENERAL STYLES 
+************************************/
+
+
+
+
+
+/*********************************** 
+Section 1: Navigation and Logo 
+************************************/
+
+.narrow-logo{
+   width: 25%;
+}
+
+.Logo-Img Img {
+   width: 70%;
+}
+
+.Main-Menu{
+   gap: 20px;
+}
+
+.Menu-Nav ul li, 
+ul li a{
+   font-size: 14px;
+   font-weight: 600;
+}
+
+.nav-btn{
+    font-size: 15px;
+    padding: 8px 5px;
+    font-weight: 600;
+}
+
+/***********************************
+ End of Section 1 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 2: Front Page 
+***********************************/
+
+.section-2 {
+   width: 92%;
+}
+
+.Front-Text {
+   flex-basis: 50%;
+}
+
+.Front-IMG-Adj {
+   width: 80%;
+}
+
+.Front-Page {
+   margin-top: 170px;
+}
+
+.Front-Text h2 {
+   font-size: 30px;
+   margin-bottom: 25px;
+}
+
+.Front-Text p {
+   font-size: 17px;
+   margin-right: 10px;
+}
+
+.Front-BTN-1 {
+   font-size: 14.2px;
+   margin-right: 14px;
+   padding: 7px 8px;
+   font-weight: 600;
+}
+
+.Front-BTN-2 {
+   font-size: 14.2px;
+   font-weight: 600;
+}
+
+/**********************************
+End of Section 2 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 3: Best Rental Service  
+***********************************/
+
+.section-3 {
+   width: 92%;
+}
+
+.car-advert-section{
+   gap: 20px;
+}
+
+.car-image img{
+   width: 100%;
+}
+
+/**********************************
+End of Section 3 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 4: We offer the best cars  
+***********************************/
+
+.Icon-Section {
+   width: 92%;
+}
+
+.CEO-Qoute{
+   gap: 15px;
+   width: 90%;
+}
+
+.CEO-IMG img{
+   width: 130px;
+}
+
+.Icon-Box{
+   gap: 40px;
+}
+
+.CEO-Text{
+   font-size: 14px;
+   margin-right: 10px;
+}
+
+.CEO-Text h5 {
+   margin-top: 10px;
+   font-size: 12px;
+   margin-bottom: 5px;
+}
+
+.CEO-Text h6 {
+   font-family: sans-serif;
+   font-size: 11px;
+}
+
+.bi-shield-fill {
+   width: 25px;
+   margin-bottom: 18px;
+}
+
+.bi-hand-thumbs-up-fill {
+   width: 25px;
+   margin-bottom: 18px;
+}
+
+.bi-lock-fill {
+   width: 25px;
+   margin-bottom: 18px;
+}
+
+/**********************************
+End of Section 4 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 5: Our Stunning Rental Cars  
+***********************************/
+
+.section-5 {
+   width: 92%;
+}
+
+.car-rental-options{
+   gap: 12px;
+}
+
+.car-rental-options h3{
+   font-size: 14px;
+}
+
+.car-rental-options h4 {
+   font-size: 14px;
+}
+
+.car-rental-options p,
+.car-rental-options ul{
+   font-size: 14px;
+}
+
+/**********************************
+End of Section 5 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 6: Our Top Rental Cars  
+***********************************/
+
+.Car-Selection-1,
+.Car-Selection-2,
+.Car-Selection-3,
+.Car-Selection-4,
+.Car-Selection-5{
+   gap: 45px;
+}
+
+.Car-Selection-1-Text h5,
+.Car-Selection-2-Text h5,
+.Car-Selection-3-Text h5,
+.Car-Selection-4-Text h5,
+.Car-Selection-5-Text h5 {
+   font-size: 10px;
+   margin-bottom: 5px;
+}
+
+.Car-Selection-1-Text h3,
+.Car-Selection-2-Text h3,
+.Car-Selection-3-Text h3,
+.Car-Selection-4-Text h3,
+.Car-Selection-5-Text h3{
+   font-size: 22px;
+   margin-bottom: 10px;
+}
+
+.Car-Selection-IMG img{
+   width: 100%;
+}
+
+.Car-Selection-1-Text,
+.Car-Selection-2-Text,
+.Car-Selection-3-Text,
+.Car-Selection-4-Text, 
+.Car-Selection-5-Text{
+   width: 170%;
+}
+
+.Car-Selection-1-Text p,
+.Car-Selection-2-Text p,
+.Car-Selection-3-Text p,
+.Car-Selection-4-Text p,
+.Car-Selection-5-Text p{
+   font-size: 14px;
+}
+
+.Car-Selection-1-Text h4,
+.Car-Selection-2-Text h4,
+.Car-Selection-3-Text h4,
+.Car-Selection-4-Text h4,
+.Car-Selection-5-Text h4 {
+   font-size: 15px;
+}
+
+.Car-Selection-1-Text span,
+.Car-Selection-2-Text span,
+.Car-Selection-3-Text span,
+.Car-Selection-4-Text span,
+.Car-Selection-5-Text span{
+   font-size: 14px;
+   font-weight: 500;
+}
+
+.Car-Selection-1-Text h6,
+.Car-Selection-2-Text h6,
+.Car-Selection-3-Text h6,
+.Car-Selection-4-Text h6,
+.Car-Selection-5-Text h6 {
+   font-size: 15px;
+}
+
+.Car-Selection-3 .Car-Selection-IMG{
+   width: 310%;
+}
+
+.Car-Selection-4 .Car-Selection-IMG{
+   width: 250%;
+}
+
+.Car-Selection-5 .Car-Selection-IMG{
+   width: 250%;
+}
+
+/**********************************
+End of Section 6 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 10: Review Sections 
+***********************************/
+
+.section-10 {
+   width: 92%;
+}
+
+.gallery {
+   row-gap: 15px;
+   column-gap: 16px;
+   display: grid;
+   grid-template-columns: 100px 100px;
+}
+
+.gallery img {
+   width: 100%;
+}
+
+.Review-Section{
+   padding: 10px 5px;
+}
+
+.Review-Section p {
+   font-size: 14px;
+}
+
+.Review-Section h4 {
+   font-size: 14px;
+}
+
+.Review-Section h5 {
+   font-style: italic;
+   color: rgb(0, 190, 0);
+   font-size: 11px;
+}
+
+.Review-Testimonials h2{
+   font-size: 27px;
+}
+
+.Review-Testimonials 
+.Header-subtitle-merge{
+   margin-bottom: 5px;
+   margin-top: 5px;
+   font-size: 17.2px;
+}
+
+.Review-Testimonials{
+   row-gap: 30px;
+   column-gap: 20px;
+   padding: 10px 0px 10px 15px;
+}
+
+.mobile-gone{
+   display: none;
+}
+
+.Review-Section svg {
+   width: 15px;
+}
+
+.Review-1 img, 
+.Review-2 img, 
+.Review-3 img, 
+.Review-4 img {
+   width: 26%;
+   border-radius: 50%;
+}
+
+.gallery img:hover{
+   transform: none;
+  }
+
+/**********************************
+End of Section 10 media queries 
+***********************************/
+
+
+
+
+
+/*********************************
+WIDE VARIETY SECTION
+*********************************/
+
+.section-6 {
+   width: 90%;
+}
+
+/********************************
+END OF WIDE VARIETY SECTION
+********************************/
+
+
+
+
+
+/*********************************
+Contact Section 
+**********************************/
+
+.section-11 {
+   width: 92%;
+}
+
+.contact-form-header h3, 
+.contact-header h3 {
+   font-size: 24px;
+}
+
+.contact-section {
+   display: grid;
+   grid-template-columns: 1fr 340px;
+   margin-top: -15px;
+}
+
+.contact-form input {
+   margin-bottom: 28px;
+   font-size: 14px;
+   width: 96%;
+}
+
+.contact-text-grid p {
+   font-size: 14px;
+}
+
+.form-grid h4 {
+   font-size: 16px;
+}
+
+.contact-text-grid {
+   column-gap: 15px;
+}
+
+.contact-text-grid {
+   display: grid;
+   grid-template-columns: 285px;
+   grid-template-rows: repeat(4, 50px);
+   column-gap: 10px;
+   color: white;
+   margin-top: 35px;
+}
+
+.form-grid-4 textarea{
+   font-size: 14px;
+   width: 95%;
+}
+
+.contact-text svg {
+   width: 25px;
+   margin-right: 10px;
+}
+
+form button {
+   padding: 5px 15px;
+   font-size: 16px;
+}
+
+iframe {
+   height: 55%;
+}
+
+select{
+   font-size: 14px;
+   width: 100%;
+}
+
+/*********************************
+End of Contact Section 
+**********************************/
+
+
+
+
+
+/*********************************** 
+Section 7: Family car text  
+***********************************/
+
+.section-7 {
+   width: 92%;
+}
+
+.Car-Family-Section {
+   height: 350px;
+}
+
+.Car-Family-Text h3{
+   font-size: 18px;
+   margin-bottom: 10px;
+}
+
+.Car-Family-Text p{
+   font-size: 14px;
+}
+
+.Car-Family-Text{
+   margin-right: 20px;
+}
+
+.Car-Family-IMG{
+   width: 75%;
+}
+
+.Car-Family-IMG img {
+   width: 100%;
+}
+
+/**********************************
+End of Section 7 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 8: Email-Signup  
+***********************************/
+
+.Email-Signup-Text h3{
+   padding: 25px 25px;
+   font-size: 25px;
+}
+
+.Email-Input h4 {
+   font-size: 23px;
+}
+
+.Email {
+   font-size: 18px;
+   width: 100%;
+}
+
+.Make-Column {
+   width: 92%;
+}
+
+.Submit {
+   font-size: 18px;
+}
+
+/**********************************
+End of Section 8 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Footer Section 
+***********************************/
+
+.Footer-Section {
+   height: 300px;
+}
+
+.Footer-Section-1 {
+   width: 25%;
+}
+
+.Footer-Section {
+   width: 100%;
+   gap: 35px;
+}
+
+.Footer-Section-2 h2, .Footer-Section-3 h2, .Footer-Section-4 h2 {
+   font-size: 15px;
+   margin-bottom: 5px;
+}
+
+.Footer-Section ul a {
+   font-size: 12px;
+}
+
+.Footer-Section-1 img {
+   width: 100%;
+}
+
+.copyright {
+   font-size: 14px;
+   height: 35px;
+}
+
+.back-to-top{
+   display: none;
+}
+
+/**********************************
+End of Footer Section media queries 
+***********************************/
+
+}
+
+/***********************************************
+End of Media Queries at 800px 
+(Phablets and Mini Tablets)
+***********************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************************************
+Media Queries at 690px (Phablets and Large Phones)
+***********************************************/
+
+@media(max-width: 690px) {
+
+
+/***********************************
+GENERAL STYLES 
+************************************/
+
+.section-3 h2,
+.section-4 h2,
+.section-5 h2,
+.section-6 h2,
+.section-11 h2 {
+   font-size: 25px;
+}
+
+.Header-subtitle {
+   font-size: 20px;
+   margin-top: 7px;
+}
+
+.car-advert-text h3,
+.Icon-1 h3,
+.Icon-2 h3,
+.Icon-3 h3 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.car-advert-text p,
+.Icon-1 p,
+.Icon-2 p,
+.Icon-3 p {
+   font-size: 19px;
+}
+
+.HR-Gap hr {
+   background-color: rgb(0, 194, 0);
+   height: 3px;
+   margin-top: 90px;
+   width: 300px;
+   border-radius: 100px;
+}
+
+/***********************************
+END OF GENERAL GENERAL STYLES 
+************************************/
+
+
+
+
+
+/*********************************** 
+Section 1: Navigation and Logo 
+************************************/
+
+#navbar {
+   padding-top: 5px;
+   padding-bottom: 5px;
+}
+
+.Main-Menu {
+   display: none;
+}
+
+.Logo-Img Img {
+   width: 100%;
+}
+
+.narrow-logo {
+   width: 42%;
+}
+
+/***********************************
+ End of Section 1 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 2: Front Page 
+***********************************/
+
+.section-2 {
+   width: 90%;
+}
+
+.Front-Page {
+   display: block;
+   margin-top: 110px;
+}
+
+.Front-IMG {
+   justify-content: center;
+   margin-bottom: 45px;
+}
+
+.Front-IMG-Adj {
+   width: 100%;
+}
+
+.Front-Text h2 {
+   font-size: 36px;
+   margin-bottom: 25px;
+}
+
+.Front-Text p {
+   font-size: 22px;
+   margin-right: 0px;
+}
+
+.Front-BTN-1 {
+   font-size: 20px;
+   margin-right: 30px;
+   padding: 10px 15px;
+   font-weight: 600;
+}
+
+.Front-BTN-2 {
+   font-size: 20px;
+   font-weight: 600;
+}
+
+/**********************************
+End of Section 2 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 3: Best Rental Service  
+***********************************/
+
+.section-3 {
+   width: 90%;
+}
+
+.car-advert-section {
+   display: block;
+}
+
+.car-image img {
+   width: 95%;
+}
+
+.car-image {
+   display: flex;
+   justify-content: center;
+}
+
+.car-advert-text {
+   box-shadow: 0px 0px 3px 5px rgb(16, 188, 16, 0.85);
+}
+
+/**********************************
+End of Section 3 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 4: We offer the best cars  
+***********************************/
+
+.Icon-Section {
+   width: 90%;
+}
+
+.Icon-Box {
+   display: block;
+}
+
+.bi-shield-fill {
+   width: 40px;
+   margin-bottom: 8px;
+}
+
+.bi-hand-thumbs-up-fill {
+   width: 40px;
+   margin-bottom: 8px;
+}
+
+.bi-lock-fill {
+   width: 40px;
+   margin-bottom: 8px;
+}
+
+.Icon-1,
+.Icon-2,
+.Icon-3{
+   margin-bottom: 60px;
+}
+
+.CEO-Qoute {
+   width: 88%;
+   margin-top: 20px;
+   display: block;
+   text-align: center;
+}
+
+.CEO-IMG img {
+   width: 180px;
+   margin-bottom: 15px;
+}
+
+.CEO-Text {
+   font-size: 19px;
+   width: 92%;
+   margin: auto;
+}
+
+.CEO-Text h5 {
+   margin-top: 20px;
+   font-size: 16px;
+}
+
+.CEO-Text h6 {
+   font-family: sans-serif;
+   font-size: 13px;
+}
+
+/**********************************
+End of Section 4 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 5: Our Stunning Rental Cars  
+***********************************/
+
+.section-5 {
+   width: 90%;
+}
+
+.car-rental-options {
+   display: block;
+}
+
+.Car-Option-1,
+.Car-Option-2,
+.Car-Option-3,
+.Car-Option-4,
+.Car-Option-5,
+.Car-Option-6,
+.Car-Option-7,
+.Car-Option-8 {
+   padding-bottom: 5px;
+   margin-bottom: 80px;
+   width: 100%;
+}
+
+.car-rental-options h3 {
+   font-size: 23px;
+}
+
+.car-rental-options h4 {
+   font-size: 20px;
+}
+
+.car-rental-options p,
+.car-rental-options ul {
+   font-size: 19px;
+}
+
+.BR-disapear{
+   display: none;
+}
+
+.Note br{
+display: none;
+}
+
+/**********************************
+End of Section 5 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 6: Our Top Rental Cars  
+***********************************/
+
+.Car-Selection-1,
+.Car-Selection-2,
+.Car-Selection-3,
+.Car-Selection-4,
+.Car-Selection-5 {
+   display: block;
+}
+
+.Car-Selection-3 .Car-Selection-IMG {
+   width: 100%;
+}
+
+.Car-Selection-4 .Car-Selection-IMG {
+   width: 100%;
+}
+
+.Car-Selection-5 .Car-Selection-IMG {
+   width: 100%;
+}
+
+.Car-Selection-1-Text,
+.Car-Selection-2-Text,
+.Car-Selection-3-Text,
+.Car-Selection-4-Text,
+.Car-Selection-5-Text {
+   width: 100%;
+}
+
+.Car-Selection-1 .Car-Selection-IMG, 
+.Car-Selection-2 .Car-Selection-IMG, 
+.Car-Selection-3 .Car-Selection-IMG, 
+.Car-Selection-4 .Car-Selection-IMG, 
+.Car-Selection-5 .Car-Selection-IMG {
+   margin-bottom: 35px;
+}
+
+.Car-Selection-1-Text h5, 
+.Car-Selection-2-Text h5, 
+.Car-Selection-3-Text h5, 
+.Car-Selection-4-Text h5, 
+.Car-Selection-5-Text h5 {
+   font-size: 13px;
+   margin-bottom: 5px;
+}
+
+.Car-Selection-1-Text h3,
+.Car-Selection-2-Text h3,
+.Car-Selection-3-Text h3,
+.Car-Selection-4-Text h3,
+.Car-Selection-5-Text h3 {
+   font-size: 27px;
+}
+
+.Car-Selection-1-Text p,
+.Car-Selection-2-Text p,
+.Car-Selection-3-Text p,
+.Car-Selection-4-Text p,
+.Car-Selection-5-Text p {
+   font-size: 19px;
+}
+
+.Car-Selection-1-Text h4,
+.Car-Selection-2-Text h4,
+.Car-Selection-3-Text h4,
+.Car-Selection-4-Text h4,
+.Car-Selection-5-Text h4 {
+   font-size: 20px;
+}
+
+.Car-Selection-1-Text span,
+.Car-Selection-2-Text span,
+.Car-Selection-3-Text span,
+.Car-Selection-4-Text span,
+.Car-Selection-5-Text span {
+   font-size: 19px;
+}
+
+.Car-Selection-1-Text h6,
+.Car-Selection-2-Text h6,
+.Car-Selection-3-Text h6,
+.Car-Selection-4-Text h6,
+.Car-Selection-5-Text h6 {
+   font-size: 20px;
+}
+
+/**********************************
+End of Section 6 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 10: Review Sections 
+***********************************/
+
+.section-10 {
+   width: 90%;
+   box-shadow: 0px 0px 3px 5px rgb(16, 188, 16, 0.85);
+   border-radius: 20px;
+}
+
+.Review-Section{
+   display: grid;
+   grid-template-columns: 1fr;
+}
+
+.Review-1 img,
+.Review-2 img,
+.Review-3 img,
+.Review-4 img {
+   width: 27%;
+   border-radius: 50%;
+}
+
+.Review-Testimonials {
+   row-gap: 30px;
+   column-gap: 25px;
+   padding: 0px 4px;
+   text-align: center;
+}
+
+.Review-Testimonials h2 {
+   font-size: 25px;
+}
+
+.Review-Section h4 {
+   font-size: 21px;
+}
+
+.Review-Section h5 {
+   font-size: 13px;
+}
+
+.Review-Section p {
+   font-size: 19px;
+}
+
+.Review-Section svg {
+   width: 20px;
+}
+
+.Review-Testimonials 
+.Header-subtitle-merge {
+    font-size: 20px;
+}
+
+.Testimonial-Head {
+   justify-content: center;
+}
+
+.gallery {
+   row-gap: 10px;
+   column-gap: 10px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   margin-top: 40px;
+}
+
+.gallery-picture {
+   overflow: hidden;
+   border-radius: 10px;
+}
+
+/**********************************
+End of Section 10 media queries 
+***********************************/
+
+
+
+
+
+/*********************************
+WIDE VARIETY SECTION
+*********************************/
+
+.section-6 {
+   width: 92%;
+}
+
+.Multiple-Car-Logos {
+   gap: 10px;
+   margin-bottom: 35px;
+}
+
+.Multiple-Car-Logos img {
+   width: 18%;
+}
+
+.Logo-2,
+.Logo-6{
+   display: none;
+}
+
+/********************************
+END OF WIDE VARIETY SECTION
+********************************/
+
+
+
+
+
+/*********************************
+Contact Section 
+**********************************/
+
+.section-11 {
+   width: 90%;
+}
+
+.contact-section {
+   display: block;
+}
+
+.contact-form {
+   border-radius: 50px 50px 0px 0px;
+}
+
+.form-grid h4 {
+   font-size: 21px;
+}
+
+.form-grid-4 textarea {
+   font-size: 19px;
+   width: 98%;
+}
+
+form button {
+   padding: 8px 20px;
+   font-size: 21px;
+   border: 3px solid black;
+   font-weight: 600;
+}
+
+.contact-text {
+   border-radius: 0px 0px 50px 50px;
+   height: 800px;
+}
+
+.contact-text-grid {
+   grid-template-columns: 384px;
+   grid-template-rows: repeat(4, 70px);
+   margin-bottom: 10px;
+}
+
+.contact-text-grid p {
+   font-size: 19px;
+}
+
+.contact-text svg {
+   width: 30px;
+   margin-right: 15px;
+}
+
+.contact-form input {
+   margin-bottom: 40px;
+   font-size: 19px;
+   width: 98%;
+}
+
+select {
+   font-size: 19px;
+   width: 100%;
+}
+
+/*********************************
+End of Contact Section 
+**********************************/
+
+
+
+
+
+/*********************************** 
+Section 7: Family car text  
+***********************************/
+
+.section-7 {
+   width: 90%;
+}
+
+.Car-Family-Section {
+   display: block;
+   height: 100%;
+}
+
+.Car-Family-IMG {
+   width: 100%;
+}
+
+.Car-Family-Text {
+   width: 92%;
+   margin: auto;
+   text-align: center;
+   padding-bottom: 20px;
+}
+
+.Car-Family-Section {
+   box-shadow: 0px 0px 3px 5px rgb(16, 188, 16, 0.85);
+}
+
+.Car-Family-Text p {
+   font-size: 19px;
+}
+
+.Car-Family-Text h3 {
+   font-size: 23px;
+   margin-bottom: 10px;
+}
+
+/**********************************
+End of Section 7 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 8: Email-Signup  
+***********************************/
+
+.Email-Section {
+   display: block;
+}
+
+.Email-Signup-Text {
+   width: 100%;
+}
+
+.Email-Signup-Text h3 {
+   font-size: 28px;
+   text-align: center;
+   padding: 40px 20px;
+}
+
+.Part-2 {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 40px;
+}
+
+.Email-Input {
+   width: 100%;
+   text-align: center;
+}
+
+.Email-Input h4 {
+   font-size: 27px;
+   margin-top: 40px;
+}
+
+.Email {
+   font-size: 23px;
+   width: 100%;
+}
+
+.Submit {
+   font-size: 23px;
+}
+
+/**********************************
+End of Section 8 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Footer Section 
+***********************************/
+
+.Footer-Section {
+   display: block;
+   width: 100%;
+   height: 100%;
+}
+
+.Footer-Section-1 {
+   width: 100%;
+   margin-bottom: 35px;
+}
+
+.back-to-top{
+   text-align: center;
+   padding-top: 35px;
+   display: block;
+}
+
+.back-to-top a{
+   color: rgb(0, 190, 0);
+   font-size: 20px;
+   text-decoration: none;
+}
+
+.back-to-top svg{
+   width: 28px;
+   color: rgb(0, 190, 0);
+}
+
+.Footer-Section-1 img {
+   width: 60%;
+   align-self: center;
+   margin-top: 50px;
+}
+
+.Footer-Section-2,
+.Footer-Section-3,
+.Footer-Section-4 {
+   text-align: center;
+   width: 100%;
+   padding-bottom: 35px;
+}
+
+.Footer-Section-2 h2, .Footer-Section-3 h2, .Footer-Section-4 h2 {
+   font-size: 23px;
+   margin-bottom: 5px;
+}
+
+.Footer-Section ul a {
+   font-size: 20px;
+}
+
+.copyright {
+   font-size: 13px;
+   padding-bottom: 8px;
+}
+
+/**********************************
+End of Footer Section media queries 
+***********************************/
+
+}
+
+/***********************************************
+End of Media Queries at 690px (Phablets and 
+Large Phones)
+***********************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************************************
+Media Queries at 490px (Large Phones and Phablets
+fixing minor things)
+***********************************************/
+
+@media (max-width: 490px) {
+
+/***********************************
+GENERAL STYLES 
+************************************/
+
+.section-3 h2,
+.section-4 h2,
+.section-5 h2,
+.section-6 h2,
+.section-11 h2 {
+   font-size: 23.2px;
+}
+
+.Header-subtitle {
+   font-size: 18.5px;
+}
+
+.car-advert-text h3, 
+.Icon-1 h3, 
+.Icon-2 h3, 
+.Icon-3 h3 {
+   font-size: 22px;
+   margin-bottom: 10px;
+}
+
+.car-advert-text p, 
+.Icon-1 p, 
+.Icon-2 p, 
+.Icon-3 p {
+   font-size: 18px;
+}
+
+/***********************************
+END OF GENERAL GENERAL STYLES 
+************************************/
+
+
+
+
+
+/*********************************** 
+Section 4: We offer the best cars  
+***********************************/
+
+.CEO-Text {
+   font-size: 18px;
+   width: 92%;
+   margin: auto;
+}
+
+.CEO-Text h5 {
+   margin-top: 15px;
+   font-size: 16px;
+}
+
+/**********************************
+End of Section 4 media queries 
+***********************************/
+
+
+
+
+
+
+/*********************************** 
+Section 5: Our Stunning Rental Cars  
+***********************************/
+
+.Car-Selection-1-Text h3, 
+.Car-Selection-2-Text h3, 
+.Car-Selection-3-Text h3, 
+.Car-Selection-4-Text h3, 
+.Car-Selection-5-Text h3 {
+   font-size: 25px;
+}
+
+.car-rental-options p, 
+.car-rental-options ul {
+   font-size: 18px;
+}
+
+.car-rental-options h4 {
+   font-size: 19px;
+}
+
+/**********************************
+End of Section 5 media queries 
+***********************************/
+
+
+
+
+
+
+/*********************************** 
+Section 6: Our Top Rental Cars  
+***********************************/
+
+.Car-Selection-1-Text p, 
+.Car-Selection-2-Text p, 
+.Car-Selection-3-Text p, 
+.Car-Selection-4-Text p, 
+.Car-Selection-5-Text p {
+   font-size: 18px;
+}
+
+.Car-Selection-1-Text span, 
+.Car-Selection-2-Text span, 
+.Car-Selection-3-Text span, 
+.Car-Selection-4-Text span, 
+.Car-Selection-5-Text span {
+   font-size: 18px;
+}
+
+.Car-Selection-1-Text h4, 
+.Car-Selection-2-Text h4, 
+.Car-Selection-3-Text h4, 
+.Car-Selection-4-Text h4, 
+.Car-Selection-5-Text h4 {
+   font-size: 19px;
+}
+
+.Car-Selection-1-Text h6, 
+.Car-Selection-2-Text h6, 
+.Car-Selection-3-Text h6, 
+.Car-Selection-4-Text h6, 
+.Car-Selection-5-Text h6 {
+   font-size: 19px;
+}
+
+/**********************************
+End of Section 6 media queries 
+***********************************/
+
+
+
+
+/*********************************** 
+Section 10: Review Sections 
+***********************************/
+
+.Review-Testimonials h2 {
+   font-size: 23.2px;
+}
+
+.Review-Section h4 {
+   font-size: 19px;
+}
+
+.Review-Section h5 {
+   font-size: 12px;
+}
+
+.Review-Testimonials 
+.Header-subtitle-merge {
+    font-size: 17.4px;
+}
+
+.Review-Section p {
+   font-size: 18px;
+}
+
+/**********************************
+End of Section 10 media queries 
+***********************************/
+
+
+
+
+
+/*********************************
+Contact Section 
+**********************************/
+
+.form-grid h4 {
+   font-size: 20px;
+}
+
+.contact-form input {
+   font-size: 18px;
+}
+
+form button {
+   font-size: 20px;
+}
+
+.contact-form-header h3, 
+.contact-header h3 {
+   font-size: 23.2px;
+}
+
+.contact-text-grid {
+   grid-template-columns: 360px;
+   grid-template-rows: repeat(4, 70px);
+}
+
+.contact-text {
+   border-radius: 0px 0px 50px 50px;
+   height: 790px;
+}
+
+.contact-text svg {
+   width: 45px;
+}
+
+.contact-text-grid p {
+   font-size: 18px;
+}
+
+.contact-form input {
+   width: 97%;
+}
+
+.form-grid-4 textarea {
+   width: 97%;
+}
+
+select {
+   font-size: 18px;
+   width: 100%;
+}
+
+/*********************************
+End of Contact Section 
+**********************************/
+
+
+
+
+
+/*********************************** 
+Section 7: Family car text  
+***********************************/
+
+.Car-Family-Text h3 {
+   font-size: 21px;
+}
+
+.Car-Family-Text p {
+   font-size: 18px;
+}
+
+/**********************************
+End of Section 7 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 8: Email-Signup  
+***********************************/
+
+.Email-Signup-Text h3 {
+   font-size: 27px;
+   text-align: center;
+   padding: 35px 20px;
+}
+
+.Email-Input h4 {
+   font-size: 25px;
+   margin-top: 35px;
+}
+
+.Part-2 {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 35px;
+}
+
+.Email {
+   font-size: 20px;
+}
+
+.Submit {
+   font-size: 20px;
+}
+
+/**********************************
+End of Section 8 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Footer Section 
+***********************************/
+
+.Footer-Section-1 img {
+   width: 45%;
+}
+
+.Footer-Section-2 h2, 
+.Footer-Section-3 h2, 
+.Footer-Section-4 h2 {
+   font-size: 19px;
+}
+
+.Footer-Section ul a {
+   font-size: 17px;
+}
+
+.copyright {
+   font-size: 12.5px;
+}
+
+.back-to-top svg {
+   width: 26px;
+   color: rgb(0, 190, 0);
+}
+
+.back-to-top a {
+   font-size: 18px;
+}
+
+/**********************************
+End of Footer Section media queries 
+***********************************/
+   
+}
+
+/***********************************************
+End of Media Queries at 490px (Large Phones and 
+Phablets fixing minor things)
+***********************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************************************
+Media Queries at 450px (Large and Medium phones)
+***********************************************/
+
+@media (max-width: 450px) {
+
+/***********************************
+GENERAL STYLES 
+************************************/
+
+.section-3 h2,
+.section-4 h2,
+.section-5 h2,
+.section-6 h2,
+.section-11 h2 {
+   font-size: 20.7px;
+}
+
+.Header-subtitle {
+   font-size: 18px;
+}
+
+.car-advert-text h3,
+.Icon-1 h3,
+.Icon-2 h3,
+.Icon-3 h3 {
+   font-size: 19.8px;
+}
+
+.car-advert-text p,
+.Icon-1 p,
+.Icon-2 p,
+.Icon-3 p {
+   font-size: 17px;
+}
+
+/***********************************
+END OF GENERAL GENERAL STYLES 
+************************************/
+
+
+
+
+
+/*********************************** 
+Section 2: Front Page 
+***********************************/
+
+.section-2 {
+   width: 90%;
+}
+
+.Front-Text h2 {
+   font-size: 34px;
+   line-height: 1.1;
+}
+
+.Front-Text p {
+   font-size: 19px;
+}
+
+.Front-BTN-1 {
+   font-size: 17px;
+   margin-right: 40px;
+}
+
+.Front-BTN-2 {
+   font-size: 17px;
+}
+
+/**********************************
+End of Section 2 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 3: Best Rental Service  
+***********************************/
+
+.section-3 {
+   width: 90%;
+}
+
+.car-advert-text {
+   box-shadow: 0px 0px 3px 3px rgb(16, 188, 16, 0.85);
+}
+
+/**********************************
+End of Section 3 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 4: We offer the best cars  
+***********************************/
+
+.Icon-Section {
+   width: 90%;
+}
+
+.bi-shield-fill {
+   width: 38px;
+}
+
+.bi-hand-thumbs-up-fill {
+   width: 38px;
+}
+
+.bi-lock-fill {
+   width: 38px;
+}
+
+.CEO-Text {
+   font-size: 17px;
+   width: 95%;
+   margin: auto;
+}
+
+.CEO-IMG img {
+   width: 180px;
+   margin-bottom: 10px;
+}
+
+.CEO-Text h5 {
+   margin-top: 15px;
+   font-size: 15px;
+}
+
+.CEO-Text h6 {
+   font-size: 13px;
+}
+
+/**********************************
+End of Section 4 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 5: Our Stunning Rental Cars  
+***********************************/
+
+.section-5 {
+   width: 92%;
+}
+
+.car-rental-options h3 {
+   font-size: 21px;
+}
+
+.car-rental-options h4 {
+   font-size: 18px;
+}
+
+.car-rental-options p,
+.car-rental-options ul {
+   font-size: 17px;
+}
+
+/**********************************
+End of Section 5 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 6: Our Top Rental Cars  
+***********************************/
+
+.Car-Selection-1-Text h5,
+.Car-Selection-2-Text h5,
+.Car-Selection-3-Text h5,
+.Car-Selection-4-Text h5,
+.Car-Selection-5-Text h5 {
+   font-size: 12px;
+}
+
+.Car-Selection-1-Text h3,
+.Car-Selection-2-Text h3,
+.Car-Selection-3-Text h3,
+.Car-Selection-4-Text h3,
+.Car-Selection-5-Text h3 {
+   font-size: 23px;
+}
+
+.Car-Selection-1-Text p,
+.Car-Selection-2-Text p,
+.Car-Selection-3-Text p,
+.Car-Selection-4-Text p,
+.Car-Selection-5-Text p {
+   font-size: 17px;
+}
+
+.Car-Selection-1-Text h4,
+.Car-Selection-2-Text h4,
+.Car-Selection-3-Text h4,
+.Car-Selection-4-Text h4,
+.Car-Selection-5-Text h4 {
+   font-size: 18px;
+}
+
+.Car-Selection-1-Text span,
+.Car-Selection-2-Text span,
+.Car-Selection-3-Text span,
+.Car-Selection-4-Text span,
+.Car-Selection-5-Text span {
+   font-size: 17px;
+}
+
+.Car-Selection-1-Text h6,
+.Car-Selection-2-Text h6,
+.Car-Selection-3-Text h6,
+.Car-Selection-4-Text h6,
+.Car-Selection-5-Text h6 {
+   font-size: 18px;
+}
+
+/**********************************
+End of Section 6 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 10: Review Sections 
+***********************************/
+
+.section-10 {
+   width: 90%;
+   box-shadow: 0px 0px 3px 3px rgb(16, 188, 16, 0.85);
+}
+
+.Review-Testimonials h2 {
+   font-size: 20.7px;
+}
+
+.Review-Testimonials 
+.Header-subtitle-merge {
+    font-size: 18px;
+}
+
+.Review-Section h4 {
+   font-size: 19px;
+}
+
+.Review-Section h5 {
+   font-size: 13px;
+}
+
+.Review-Section p {
+   font-size: 17px;
+}
+
+.Review-Testimonials {
+   column-gap: 20px;
+}
+
+.Review-Section svg {
+   width: 18px;
+}
+
+.Testimonial-Head {
+   display: block;
+}
+
+.Review-1 img, 
+.Review-2 img, 
+.Review-3 img, 
+.Review-4 img {
+   width: 40%;
+   border-radius: 50%;
+}
+
+/**********************************
+End of Section 10 media queries 
+***********************************/
+
+
+
+
+
+/*********************************
+Contact Section 
+**********************************/
+
+.section-11 {
+   width: 90%;
+}
+
+.contact-form-header h3,
+.contact-header h3 {
+   font-size: 20.7px;
+}
+
+.form-grid h4 {
+   font-size: 19px;
+}
+
+.contact-form input {
+   margin-bottom: 40px;
+   font-size: 17px;
+   width: 96%;
+}
+
+.form-grid-4 textarea {
+   font-size: 17px;
+}
+
+form button {
+   font-size: 19px;
+}
+
+.contact-text {
+   height: 750px;
+}
+
+.contact-text-grid {
+   grid-template-columns: 305px;
+   grid-template-rows: repeat(4, 65px);
+}
+
+.contact-text-grid p {
+   font-size: 17px;
+}
+
+.contact-text svg {
+   width: 42px;
+   margin-right: 12px;
+}
+
+select {
+   font-size: 17px;
+}
+
+/*********************************
+End of Contact Section 
+**********************************/
+
+
+
+
+
+/*********************************** 
+Section 7: Family car text  
+***********************************/
+
+.section-7 {
+   width: 92%;
+}
+
+.Car-Family-Section {
+   box-shadow: 0px 0px 3px 3px rgb(16, 188, 16, 0.85y);
+}
+
+.Car-Family-Text p {
+   font-size: 17px;
+}
+
+.Car-Family-Text h3 {
+   font-size: 19px;
+}
+
+/**********************************
+End of Section 7 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 8: Email-Signup  
+***********************************/
+
+.Email-Signup-Text h3 {
+   font-size: 25px;
+   padding: 30px 14px;
+}
+
+.Email-Input h4 {
+   font-size: 23px;
+   margin-top: 35px;
+}
+
+.Email {
+   font-size: 19px;
+}
+
+.Submit {
+   font-size: 19px;
+}
+
+.Part-2 {
+   margin-bottom: 35px;
+}
+
+/**********************************
+End of Section 8 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Footer Section 
+***********************************/
+
+.Footer-Section-2 h2,
+.Footer-Section-3 h2,
+.Footer-Section-4 h2 {
+   font-size: 19px;
+}
+
+.Footer-Section ul a {
+   font-size: 17px;
+}
+
+.Footer-Section-1 img {
+   margin-bottom: 0px;
+   width: 50%;
+}
+
+.copyright {
+   font-size: 11px;
+}
+
+/**********************************
+End of Footer Section media queries 
+***********************************/
+
+}
+
+/***********************************************
+End of Media Queries at 450px (Large and Medium 
+phones)
+***********************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************************************
+Media Queries at 400px (Medium Sized phones)
+***********************************************/
+
+@media (max-width: 400px) {
+   
+/***********************************
+GENERAL STYLES 
+************************************/
+
+.section-3 h2,
+.section-4 h2,
+.section-5 h2,
+.section-6 h2,
+.section-11 h2 {
+   font-size: 19px;
+}
+
+.Header-subtitle {
+   font-size: 17px;
+}
+
+.car-advert-text h3,
+.Icon-1 h3,
+.Icon-2 h3,
+.Icon-3 h3 {
+   font-size: 20px;
+}
+
+.car-advert-text p,
+.Icon-1 p,
+.Icon-2 p,
+.Icon-3 p {
+   font-size: 17px;
+}
+
+.HR-Gap hr {
+   width: 290px;
+}
+
+
+/***********************************
+END OF GENERAL GENERAL STYLES 
+************************************/
+
+
+
+
+
+/*********************************** 
+Section 2: Front Page 
+***********************************/
+
+.section-2 {
+   width: 92%;
+}
+
+.Front-Text h2 {
+   font-size: 28px;
+}
+
+.Front-BTN-1 {
+   font-size: 16px;
+   margin-right: 27px;
+   font-weight: 600;
+   padding: 10px 8px;
+}
+
+.Front-BTN-2 {
+   font-size: 16px;
+   font-weight: 600;
+}
+
+/**********************************
+End of Section 2 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 3: Best Rental Service  
+***********************************/
+
+.section-3 {
+   width: 92%;
+}
+
+.car-advert-text {
+   padding: 15px 10px;
+   border-radius: 25px;
+}
+
+/**********************************
+End of Section 3 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 4: We offer the best cars  
+***********************************/
+
+.Icon-Section {
+   width: 92%;
+}
+
+/**********************************
+End of Section 4 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 5: Our Stunning Rental Cars  
+***********************************/
+
+.section-5 {
+   width: 92%;
+}
+
+.car-rental-options h3 {
+   font-size: 19px;
+}
+
+.car-rental-options h4 {
+   font-size: 17px;
+}
+
+/**********************************
+End of Section 5 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 10: Review Sections 
+***********************************/
+
+.section-10 {
+   width: 92%;
+}
+
+.Review-Testimonials h2 {
+   font-size: 19px;
+}
+
+.Review-Testimonials 
+.Header-subtitle-merge {
+    font-size: 17px;
+}
+
+.Review-Section h4 {
+   font-size: 18px;
+}
+
+.Review-Section h5 {
+   font-size: 12px;
+}
+
+.Testimonial-Head {
+   display: block;
+}
+
+.Review-1 img,
+.Review-2 img,
+.Review-3 img,
+.Review-4 img {
+   width: 40%;
+   border-radius: 50%;
+}
+
+/**********************************
+End of Section 10 media queries 
+***********************************/
+
+
+
+
+
+/*********************************
+Contact Section 
+**********************************/
+
+.section-11 {
+   width: 92%;
+}
+
+.contact-text-grid {
+   grid-template-columns: 260px;
+   grid-template-rows: repeat(4, 65px);
+}
+
+.contact-text {
+   height: 740px;
+}
+
+/*********************************
+End of Contact Section 
+**********************************/
+
+
+
+
+
+/*********************************** 
+Section 7: Family car text  
+***********************************/
+
+.section-7 {
+   width: 92%;
+}
+
+/**********************************
+End of Section 7 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Footer Section 
+***********************************/
+
+.copyright {
+   font-size: 10px;
+}
+
+/**********************************
+End of Footer Section media queries 
+***********************************/
+
+}
+
+/***********************************************
+End of Media Queries at 400px (Medium Sized 
+phones)
+***********************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************************************
+Media Queries at 350px (Medium to Small phones)
+***********************************************/
+
+@media (max-width: 350px) {
+
+/***********************************
+GENERAL STYLES 
+************************************/
+
+.section-3 h2,
+.section-4 h2,
+.section-5 h2,
+.section-6 h2,
+.section-11 h2 {
+   font-size: 19px;
+}
+
+.Header-subtitle {
+   font-size: 17px;
+}
+
+.car-advert-text h3,
+.Icon-1 h3,
+.Icon-2 h3,
+.Icon-3 h3 {
+   font-size: 19px;
+}
+
+.car-advert-text p,
+.Icon-1 p,
+.Icon-2 p,
+.Icon-3 p {
+   font-size: 17px;
+}
+
+.HR-Gap hr {
+   width: 250px;
+}
+
+/***********************************
+END OF GENERAL GENERAL STYLES 
+************************************/
+
+
+
+
+
+/*********************************** 
+Section 2: Front Page 
+***********************************/
+
+.section-2 {
+   width: 93%;
+}
+
+.Front-Text h2 {
+   font-size: 26px;
+}
+
+.Front-BTN-1 {
+   font-size: 15px;
+   margin-right: 17px;
+}
+
+.Front-BTN-2 {
+   font-size: 15px;
+}
+
+/**********************************
+End of Section 2 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 10: Review Sections 
+***********************************/
+
+.Review-Testimonials {
+   row-gap: 30px;
+   column-gap: 18px;
+}
+
+.Review-Section h4 {
+   font-size: 17px;
+}
+
+.Review-Section h5 {
+   font-size: 10.4px;
+}
+
+/**********************************
+End of Section 10 media queries 
+***********************************/
+
+
+
+
+
+/*********************************
+Contact Section 
+**********************************/
+
+.contact-text-grid {
+   grid-template-columns: 242px;
+}
+
+.contact-text svg {
+   width: 45px;
+}
+
+.contact-text {
+   padding: 35px 18px;
+}
+
+.contact-text {
+   height: 730px;
+}
+
+/*********************************
+End of Contact Section 
+**********************************/
+   
+}
+
+/***********************************************
+End of Media Queries at 350px (Medium to Small 
+phones)
+***********************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************************************
+Media Queries at 300px (Fold phones)
+***********************************************/
+
+@media (max-width: 300px) {
+   
+/***********************************
+GENERAL STYLES 
+************************************/
+
+.section-3 h2,
+.section-4 h2,
+.section-5 h2,
+.section-6 h2,
+.section-11 h2 {
+   font-size: 19px;
+}
+
+.Header-subtitle {
+   font-size: 17px;
+}
+
+.car-advert-text h3,
+.Icon-1 h3,
+.Icon-2 h3,
+.Icon-3 h3 {
+   font-size: 17.9px;
+}
+
+.car-advert-text p,
+.Icon-1 p,
+.Icon-2 p,
+.Icon-3 p {
+   font-size: 16px;
+}
+
+.HR-Gap hr {
+   width: 250px;
+}
+
+/***********************************
+END OF GENERAL GENERAL STYLES 
+************************************/
+
+
+
+
+
+/*********************************** 
+Section 2: Front Page 
+***********************************/
+
+.section-2 {
+   width: 93%;
+}
+
+.Front-Text h2 {
+   font-size: 27px;
+}
+
+.Front-Text p {
+   font-size: 17px;
+}
+
+.Front-BTN-1 {
+   font-size: 14px;
+   margin-right: 12px;
+}
+
+.Front-BTN-2 {
+   font-size: 14px;
+}
+
+/**********************************
+End of Section 2 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 4: We offer the best cars  
+***********************************/
+
+.CEO-Text {
+   font-size: 16px;
+   width: 95%;
+   margin: auto;
+}
+
+/**********************************
+End of Section 4 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 5: Our Stunning Rental Cars  
+***********************************/
+
+.car-rental-options p, 
+.car-rental-options ul {
+   font-size: 16px;
+}
+
+/**********************************
+End of Section 5 media queries 
+***********************************/
+
+
+
+
+
+
+/*********************************** 
+Section 6: Our Top Rental Cars  
+***********************************/
+
+.Car-Selection-1-Text p, 
+.Car-Selection-2-Text p, 
+.Car-Selection-3-Text p, 
+.Car-Selection-4-Text p, 
+.Car-Selection-5-Text p {
+   font-size: 16px;
+}
+
+.Car-Selection-1-Text span, 
+.Car-Selection-2-Text span, 
+.Car-Selection-3-Text span, 
+.Car-Selection-4-Text span, 
+.Car-Selection-5-Text span {
+   font-size: 16px;
+}
+
+.Car-Selection-1-Text h4, 
+.Car-Selection-2-Text h4, 
+.Car-Selection-3-Text h4, 
+.Car-Selection-4-Text h4, 
+.Car-Selection-5-Text h4 {
+   font-size: 17px;
+}
+
+.Car-Selection-1-Text h6, 
+.Car-Selection-2-Text h6, 
+.Car-Selection-3-Text h6, 
+.Car-Selection-4-Text h6, 
+.Car-Selection-5-Text h6 {
+   font-size: 17px;
+}
+
+/**********************************
+End of Section 6 media queries 
+***********************************/
+
+
+
+
+
+/*********************************** 
+Section 10: Review Sections 
+***********************************/
+
+.Review-Section {
+   padding: 10px 0px;
+}
+
+.Review-Testimonials {
+   column-gap: 12px;
+   padding: 0px 2px;
+}
+
+.gallery img {
+   width: 94%;
+}
+
+.gallery {
+   row-gap: 7px;
+   column-gap: 0px;
+}
+
+.Review-Section p {
+   font-size: 16px;
+}
+
+.Review-Section svg {
+   width: 16px;
+}
+
+/**********************************
+End of Section 10 media queries 
+***********************************/
+
+
+
+
+
+
+/*********************************
+Contact Section 
+**********************************/
+
+.contact-form input {
+   margin-bottom: 40px;
+   font-size: 16px;
+   width: 96%;
+}
+
+.form-grid h4 {
+   font-size: 18px;
+}
+
+.contact-text-grid {
+   grid-template-columns: 225px;
+}
+
+.contact-text-grid p {
+   font-size: 16px;
+}
+
+.contact-text {
+   height: 720px;
+}
+
+form button {
+   font-size: 18px;
+}
+
+select {
+   font-size: 16px;
+}
+
+/*********************************
+End of Contact Section 
+**********************************/
+
+
+
+
+
+/*********************************** 
+Section 7: Family car text  
+***********************************/
+
+.Car-Family-Text p {
+   font-size: 16px;
+}
+
+/**********************************
+End of Section 7 media queries 
+***********************************/
+
+}
+
+/***********************************************
+End of Media Queries at 300px (Fold Phones)
+***********************************************/
